@@ -1,13 +1,14 @@
 package test
 
 import (
-	vcs "github.com/crawlab-team/crawlab-vcs"
 	"io/ioutil"
 	"os"
 	"path"
 	"sync"
 	"testing"
 	"time"
+
+	vcs "github.com/Buliqioqiolibusdo/demp-vcs"
 )
 
 func init() {

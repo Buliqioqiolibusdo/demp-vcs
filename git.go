@@ -1,6 +1,13 @@
 package vcs
 
 import (
+	"io/ioutil"
+	"os"
+	"path"
+	"regexp"
+	"sort"
+	"strings"
+
 	"github.com/crawlab-team/go-trace"
 	"github.com/go-git/go-billy/v5"
 	"github.com/go-git/go-billy/v5/memfs"
@@ -13,12 +20,6 @@ import (
 	gitssh "github.com/go-git/go-git/v5/plumbing/transport/ssh"
 	"github.com/go-git/go-git/v5/storage/memory"
 	"golang.org/x/crypto/ssh"
-	"io/ioutil"
-	"os"
-	"path"
-	"regexp"
-	"sort"
-	"strings"
 )
 
 var headRefRegexp, _ = regexp.Compile("^ref: (.*)")

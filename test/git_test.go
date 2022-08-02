@@ -2,16 +2,17 @@ package test
 
 import (
 	"encoding/json"
-	"github.com/crawlab-team/crawlab-vcs"
+	"io/ioutil"
+	"os"
+	"path"
+	"testing"
+
+	vcs "github.com/Buliqioqiolibusdo/demp-vcs"
 	"github.com/go-git/go-billy/v5/memfs"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/storage/memory"
 	"github.com/stretchr/testify/require"
-	"io/ioutil"
-	"os"
-	"path"
-	"testing"
 )
 
 func TestNewGitClient_Existing(t *testing.T) {

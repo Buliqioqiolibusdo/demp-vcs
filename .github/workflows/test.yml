@@ -30,7 +30,7 @@ jobs:
           cat $GITHUB_WORKSPACE/test/.ssh/id_rsa
 
       - name: Run Tests
-        run: go test ./... -race -coverprofile=coverage.txt -covermode=atomic -coverpkg github.com/crawlab-team/crawlab-vcs
+        run: go test ./... -race -coverprofile=coverage.txt -covermode=atomic -coverpkg github.com/Buliqioqiolibusdo/demp-vcs
 
       - name: Codecov
         uses: codecov/codecov-action@v1.5.0
